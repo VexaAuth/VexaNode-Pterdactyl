@@ -1,0 +1,17 @@
+<?php
+
+return [
+    'title' => '数据库',
+    'out-of-databases' => '看起来您没有数据库。',
+    'no-databases' => '无法为此服务器创建数据库。',
+    'cannot-create' => '无法为此服务器创建备份。',
+    'created' => '已为此服务器分配了 {{count}} 个数据库，共可分配 {{limit}} 个。',
+    'create-title' => '创建新数据库',
+    'name' => '数据库名称',
+    'name-description' => '为您的数据库实例提供一个描述性名称。',
+    'connections' => '连接来源',
+    'connections-description' => '允许连接的来源。留空以允许来自任何地方的连接。',
+    'cancel' => '取消',
+    'create-database' => '创建数据库',
+    'new-database' => '新数据库',
+];

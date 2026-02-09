@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'title' => 'Dashboard',
+    'uptodate-header' => 'Seu painel está atualizado',
+    'uptodate-body' => 'Você está usando <code>:version</code>. Seu painel está na última versão!',
+    'notuptodate-header' => 'Seu painel não está atualizado',
+    'notuptodate-body' => '<code>:latest</code> já está disponível! Leia nossa documentação para atualizar seu Painel.',
+    'feedback-header' => 'Está gostando do painel?',
+    'feedback-body' => 'Se você está gostando dos recursos e da facilidade de uso do Reviactyl, conte para conosco! Seu feedback nos ajuda a melhorar e criar ferramentas ainda mais incríveis para você.',
+    'feedback-btn' => 'Criar Issue',
+    'sponsor-header' => 'Suporte',
+    'sponsor-body' => 'Obrigado por usar o Reviactyl. Isso só foi possível graças ao apoio de vocês, dos nossos colaboradores e dos demais apoiadores! Agradecemos todo e qualquer apoio.',
+    'sponsor-btn' => 'Virar patrocinador',
+
+    'help-btn' => 'Obter ajuda',
+    'docs-btn' => 'Documentação',
+];

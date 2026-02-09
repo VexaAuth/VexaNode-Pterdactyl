@@ -1,0 +1,66 @@
+<?php
+
+return [
+    'location' => [
+        'no_location_found' => 'Impossible de trouver un enregistrement correspondant au code court fourni.',
+        'ask_short' => 'Code court de l\'emplacement',
+        'ask_long' => 'Description de l\'emplacement',
+        'created' => 'Création réussie d\'un nouvel emplacement (:name) avec l\'ID :id.',
+        'deleted' => 'L\'emplacement demandé a été supprimé avec succès.',
+    ],
+    'user' => [
+        'search_users' => 'Entrez un nom d\'utilisateur, un identifiant utilisateur ou une adresse mail.',
+        'select_search_user' => 'ID de l\'utilisateur à supprimer (Entrez \'0\' pour effectuer une nouvelle recherche)',
+        'deleted' => 'Utilisateur supprimé avec succès du panel',
+        'confirm_delete' => 'Êtes-vous sûr de vouloir supprimer cet utilisateur du panel ?',
+        'no_users_found' => 'Aucun utilisateur n\'a été trouvé pour le terme de recherche fourni.',
+        'multiple_found' => 'Plusieurs comptes ont été trouvés pour l\'utilisateur fourni, impossible de supprimer un utilisateur en raison du drapeau --no-interaction.',
+        'ask_admin' => 'Cet utilisateur est-il un administrateur ?',
+        'ask_email' => 'Adresse Mail',
+        'ask_username' => 'Nom d\'utilisateur',
+        'ask_name_first' => 'Prénom',
+        'ask_name_last' => 'Nom',
+        'ask_password' => 'Mot de passe',
+        'ask_password_tip' => 'Si vous souhaitez créer un compte avec un mot de passe aléatoire envoyé par e-mail à l\'utilisateur, relancez cette commande (CTRL+C) et passez le drapeau `--no-password`.',
+        'ask_password_help' => 'Passwords must be at least 8 characters in length and contain at least one capital letter and number.',
+        '2fa_help_text' => [
+            'Cette commande désactive l\'authentification à deux facteurs pour le compte d\'un utilisateur si celle-ci est activée. Elle ne doit être utilisée que comme commande de récupération de compte si l\'utilisateur est bloqué hors de son compte.',
+            'Si ce n\'est pas ce que vous souhaitiez faire, appuyez sur CTRL+C pour quitter ce processus.',
+        ],
+        '2fa_disabled' => 'L\'authentification à deux facteurs a été désactivée pour :email.',
+    ],
+    'schedule' => [
+        'output_line' => 'Envoi de la tâche pour la première tâche dans `:schedule` (:hash).',
+    ],
+    'maintenance' => [
+        'deleting_service_backup' => 'Suppression du fichier de sauvegarde du service :file.',
+    ],
+    'server' => [
+        'rebuild_failed' => 'La demande de reconstruction pour \':name\' (#:id) sur le noeud \':node\' a échoué avec l\'erreur suivante : :message',
+        'reinstall' => [
+            'failed' => 'La demande de réinstallation de \':name\' (#:id) sur le noeud \':node\' a échoué avec l\'erreur suivante : :message',
+            'confirm' => 'Vous êtes sur le point de procéder à une réinstallation sur un groupe de serveurs. Souhaitez-vous continuer ?',
+        ],
+        'power' => [
+            'confirm' => 'Vous êtes sur le point d\'effectuer un :action sur :count serveurs. Voulez-vous continuer ?',
+            'action_failed' => 'La demande d\'action pour \':name\' (#:id) sur le noeud \':node\' a échoué avec l\'erreur suivante : :message',
+        ],
+    ],
+    'environment' => [
+        'mail' => [
+            'ask_smtp_host' => 'Fournisseur SMTP (exemple: mail.infomaniak.com)',
+            'ask_smtp_port' => 'Port SMTP',
+            'ask_smtp_username' => 'Identifiant SMTP',
+            'ask_smtp_password' => 'Mot de passe SMTP',
+            'ask_mailgun_domain' => 'Domaine Mailgun',
+            'ask_mailgun_endpoint' => 'Point de terminaison Mailgun',
+            'ask_mailgun_secret' => 'Secret Mailgun',
+            'ask_mandrill_secret' => 'Secret Mandrill',
+            'ask_postmark_username' => 'Clé API Postmark',
+            'ask_driver' => 'Mandrill, Quel pilote doit être utilisé pour envoyer des e-mails ?',
+            'ask_mail_from' => 'Les e-mails doivent provenir de l\'adresse mail suivante',
+            'ask_mail_name' => 'Nom qui doit apparaître dans les mails',
+            'ask_encryption' => 'Méthode de chiffrement à utiliser',
+        ],
+    ],
+];

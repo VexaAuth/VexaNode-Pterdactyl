@@ -1,0 +1,23 @@
+<?php
+
+return [
+    'administration' => [
+        'title' => 'प्रशासन',
+        'dashboard' => 'डैशबोर्ड',
+        'settings' => 'सेटिंग्स',
+        'api' => 'एप्लिकेशन API',
+    ],
+    'management' => [
+        'title' => 'प्रबंध',
+        'databases' => 'डेटाबेस',
+        'locations' => 'स्थानों',
+        'nodes' => 'नोड्स',
+        'servers' => 'सर्वर',
+        'users' => 'उपयोगकर्ताओं',
+    ],
+    'service' => [
+        'title' => 'सेवा प्रबंधन',
+        'mounts' => 'माउंट',
+        'nests' => 'घोंसले',
+    ],
+];
