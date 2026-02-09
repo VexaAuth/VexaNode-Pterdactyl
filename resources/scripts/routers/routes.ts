@@ -14,6 +14,12 @@ import AccountSSHContainer from '@/components/dashboard/ssh/AccountSSHContainer'
 import ActivityLogContainer from '@/components/dashboard/activity/ActivityLogContainer';
 import ServerActivityLogContainer from '@/components/server/ServerActivityLogContainer';
 import { FaBoltLightning, FaBoxArchive, FaCalendar, FaDatabase, FaEye, FaFolder, FaGear, FaKey, FaLock, FaPlay, FaTerminal, FaUser, FaUsers } from 'react-icons/fa6';
+import { TicketIcon } from '@heroicons/react/solid';
+
+// Lazy load ticket components
+const TicketsContainer = lazy(() => import('@/components/dashboard/tickets/TicketsContainer'));
+const CreateTicketContainer = lazy(() => import('@/components/dashboard/tickets/CreateTicketContainer'));
+const TicketViewContainer = lazy(() => import('@/components/dashboard/tickets/TicketViewContainer'));
 
 // Each of the router files is already code split out appropriately — so
 // all of the items above will only be loaded in when that router is loaded.
@@ -78,6 +84,23 @@ export default {
             name: 'account.activity',
             icon: FaEye,
             component: ActivityLogContainer,
+        },
+        {
+            path: '/tickets',
+            name: 'account.tickets',
+            icon: TicketIcon,
+            component: TicketsContainer,
+            exact: true,
+        },
+        {
+            path: '/tickets/new',
+            name: undefined,
+            component: CreateTicketContainer,
+        },
+        {
+            path: '/tickets/:id',
+            name: undefined,
+            component: TicketViewContainer,
         },
     ],
     server: {

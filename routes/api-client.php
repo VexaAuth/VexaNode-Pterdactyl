@@ -43,6 +43,15 @@ Route::prefix('/account')->middleware(AccountSubject::class)->group(function () 
         Route::post('/', [Client\SSHKeyController::class, 'store']);
         Route::post('/remove', [Client\SSHKeyController::class, 'delete']);
     });
+
+    Route::prefix('/tickets')->group(function () {
+        Route::get('/', [Client\TicketController::class, 'index']);
+        Route::post('/', [Client\TicketController::class, 'store']);
+        Route::get('/{ticket}', [Client\TicketController::class, 'view']);
+        Route::patch('/{ticket}', [Client\TicketController::class, 'update']);
+        Route::post('/{ticket}/messages', [Client\TicketController::class, 'addMessage']);
+        Route::post('/{ticket}/close', [Client\TicketController::class, 'close']);
+    });
 });
 
 /*
